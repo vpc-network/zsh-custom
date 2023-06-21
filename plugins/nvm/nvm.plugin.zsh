@@ -18,7 +18,7 @@ if [ -d $NVM_DIR ]; then
       elif [ "$nvmrc_node_version" != "$node_version" ]; then
         nvm use
       fi
-    elif [ "$node_version" != "$(nvm version default)" ]; then
+    elif [ "$node_version" != "$(nvm version default)" ] && [ "N/A" != "$(nvm version default)" ]; then
       echo "Reverting to nvm default version"
       nvm use default
     fi
