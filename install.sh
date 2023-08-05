@@ -8,3 +8,4 @@ fi
 
 # pull module updates
 git -C $HOME/.oh-my-zsh/custom pull
+git -C $HOME/.oh-my-zsh/custom submodule update --init --recursive
